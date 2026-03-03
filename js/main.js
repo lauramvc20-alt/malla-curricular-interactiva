@@ -75,7 +75,10 @@ async function init() {
     function updateProgress() {
         const { materias } = getState();
         const { tech, eng } = calcProgress(materias);
-        renderProgress(app, tech, eng);
+        // ubicar bloques ya renderizados
+        const blocks = document.querySelectorAll('.program-block');
+        if (blocks[0]) renderProgress(blocks[0], tech, 'tech');
+        if (blocks[1]) renderProgress(blocks[1], eng, 'eng');
     }
 }
 

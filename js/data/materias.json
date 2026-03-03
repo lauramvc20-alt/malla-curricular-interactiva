@@ -280,56 +280,182 @@
   },
   {
     "id": 32,
-    "nombre": "Redes de Computadoras",
+    "nombre": "Cátedra Mateísta Universitaria",
     "periodo": 7,
     "nivel": "AVANZADO",
     "estado": "PENDIENTE",
-    "créditos": 20,
+    "créditos": 8,
     "prerrequisitos": []
   },
   {
     "id": 33,
-    "nombre": "Mecatrónica",
+    "nombre": "Cálculo Vectorial",
     "periodo": 7,
     "nivel": "AVANZADO",
     "estado": "PENDIENTE",
-    "créditos": 20,
+    "créditos": 8,
     "prerrequisitos": []
   },
   {
     "id": 34,
-    "nombre": "Seguridad Informática",
-    "periodo": 8,
+    "nombre": "Física General",
+    "periodo": 7,
     "nivel": "AVANZADO",
     "estado": "PENDIENTE",
-    "créditos": 20,
+    "créditos": 8,
     "prerrequisitos": []
   },
   {
     "id": 35,
-    "nombre": "Diseño de Máquinas",
-    "periodo": 8,
+    "nombre": "Teoría General de Sistemas",
+    "periodo": 7,
     "nivel": "AVANZADO",
     "estado": "PENDIENTE",
-    "créditos": 20,
+    "créditos": 8,
     "prerrequisitos": []
   },
   {
     "id": 36,
-    "nombre": "Proyecto Integrador I",
-    "periodo": 9,
+    "nombre": "Modelos de Calidad de Software",
+    "periodo": 7,
     "nivel": "AVANZADO",
     "estado": "PENDIENTE",
-    "créditos": 41,
+    "créditos": 8,
     "prerrequisitos": []
   },
   {
     "id": 37,
-    "nombre": "Proyecto Integrador II",
+    "nombre": "Formulación y Evaluación de Proyectos",
+    "periodo": 8,
+    "nivel": "AVANZADO",
+    "estado": "PENDIENTE",
+    "créditos": 8,
+    "prerrequisitos": []
+  },
+  {
+    "id": 38,
+    "nombre": "Programación Lineal",
+    "periodo": 8,
+    "nivel": "AVANZADO",
+    "estado": "PENDIENTE",
+    "créditos": 8,
+    "prerrequisitos": []
+  },
+  {
+    "id": 39,
+    "nombre": "Ecuaciones diferenciales",
+    "periodo": 8,
+    "nivel": "AVANZADO",
+    "estado": "PENDIENTE",
+    "créditos": 8,
+    "prerrequisitos": []
+  },
+  {
+    "id": 40,
+    "nombre": "Gestión de Servicios de TI",
+    "periodo": 8,
+    "nivel": "AVANZADO",
+    "estado": "PENDIENTE",
+    "créditos": 8,
+    "prerrequisitos": []
+  },
+  {
+    "id": 41,
+    "nombre": "Arquitectura de Aplicaciones",
+    "periodo": 8,
+    "nivel": "AVANZADO",
+    "estado": "PENDIENTE",
+    "créditos": 8,
+    "prerrequisitos": []
+  },
+  {
+    "id": 42,
+    "nombre": "Gestión de Proyectos",
+    "periodo": 9,
+    "nivel": "AVANZADO",
+    "estado": "PENDIENTE",
+    "créditos": 8,
+    "prerrequisitos": []
+  },
+  {
+    "id": 43,
+    "nombre": "Seminario de Investigación, innovación y emprendimiento",
+    "periodo": 9,
+    "nivel": "AVANZADO",
+    "estado": "PENDIENTE",
+    "créditos": 8,
+    "prerrequisitos": []
+  },
+  {
+    "id": 44,
+    "nombre": "Bodega de Datos",
+    "periodo": 9,
+    "nivel": "AVANZADO",
+    "estado": "PENDIENTE",
+    "créditos": 8,
+    "prerrequisitos": []
+  },
+  {
+    "id": 45,
+    "nombre": "Modelado y Simulación",
+    "periodo": 9,
+    "nivel": "AVANZADO",
+    "estado": "PENDIENTE",
+    "créditos": 8,
+    "prerrequisitos": []
+  },
+  {
+    "id": 46,
+    "nombre": "Electiva III",
+    "periodo": 9,
+    "nivel": "AVANZADO",
+    "estado": "PENDIENTE",
+    "créditos": 9,
+    "prerrequisitos": []
+  },
+  {
+    "id": 47,
+    "nombre": "Ética profesional",
     "periodo": 10,
     "nivel": "AVANZADO",
     "estado": "PENDIENTE",
-    "créditos": 41,
+    "créditos": 8,
+    "prerrequisitos": []
+  },
+  {
+    "id": 48,
+    "nombre": "Opción de grado nivel universitario",
+    "periodo": 10,
+    "nivel": "AVANZADO",
+    "estado": "PENDIENTE",
+    "créditos": 8,
+    "prerrequisitos": []
+  },
+  {
+    "id": 49,
+    "nombre": "Inteligencia negocios",
+    "periodo": 10,
+    "nivel": "AVANZADO",
+    "estado": "PENDIENTE",
+    "créditos": 8,
+    "prerrequisitos": []
+  },
+  {
+    "id": 50,
+    "nombre": "Minería de datos",
+    "periodo": 10,
+    "nivel": "AVANZADO",
+    "estado": "PENDIENTE",
+    "créditos": 8,
+    "prerrequisitos": []
+  },
+  {
+    "id": 51,
+    "nombre": "Electiva IV",
+    "periodo": 10,
+    "nivel": "AVANZADO",
+    "estado": "PENDIENTE",
+    "créditos": 9,
     "prerrequisitos": []
   }
 ]

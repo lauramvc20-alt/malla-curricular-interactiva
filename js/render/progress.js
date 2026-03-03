@@ -1,63 +1,43 @@
 /**
- * Dibuja o actualiza barras de progreso para dos programas académicos.
+ * Dibuja o actualiza una barra de progreso dentro de un bloque de programa.
+ * Se debe pasar el `root` correspondiente al bloque (`.program-block`) y
+ * un solo porcentaje junto con el tipo de programa ('tech' o 'eng').
  * @param {HTMLElement} root
- * @param {number} techPercent - Porcentaje para Tecnología
- * @param {number} engPercent - Porcentaje para Ingeniería
+ * @param {number} percent
+ * @param {string} type
  */
-export function renderProgress(root, techPercent, engPercent) {
-    let container = root.querySelector("#progress-container");
+export function renderProgress(root, percent, type) {
+    // identificar selector único para este contenedor
+    let container = root.querySelector(".progress-container");
     if (!container) {
         container = document.createElement("div");
-        container.id = "progress-container";
-        container.className = "progress-bars";
+        container.className = `progress-container ${type}-progress`;
         container.innerHTML = `
-            <div class="progress-item tech-progress">
-                <div class="progress-header">
-                    <span class="program-name">Tecnología en Desarrollo de Software</span>
-                    <span class="progress-text" id="tech-text"></span>
-                </div>
-                <div class="progress-bar-wrapper">
-                    <div id="tech-bar" class="progress-bar"></div>
-                </div>
+            <div class="progress-bar-wrapper">
+                <div class="progress-bar"></div>
             </div>
-            <div class="progress-item eng-progress">
-                <div class="progress-header">
-                    <span class="program-name">Ingeniería de Sistemas</span>
-                    <span class="progress-text" id="eng-text"></span>
-                </div>
-                <div class="progress-bar-wrapper">
-                    <div id="eng-bar" class="progress-bar"></div>
-                </div>
-            </div>
+            <span class="progress-text"></span>
         `;
-        root.prepend(container);
+        // colocar justo después del header para que no quede corto
+        const header = root.querySelector('.program-header');
+        if (header && header.parentNode === root) {
+            root.insertBefore(container, header.nextSibling);
+        } else {
+            root.prepend(container);
+        }
     }
 
-    // Actualizar Tecnología
-    const techBar = container.querySelector("#tech-bar");
-    const techText = container.querySelector("#tech-text");
-    techBar.style.width = techPercent + "%";
-    techText.textContent = techPercent + "% completado";
-    techBar.classList.remove("low", "medium", "high");
-    if (techPercent <= 30) {
-        techBar.classList.add("low");
-    } else if (techPercent <= 70) {
-        techBar.classList.add("medium");
-    } else {
-        techBar.classList.add("high");
-    }
+    const bar = container.querySelector(".progress-bar");
+    const text = container.querySelector(".progress-text");
+    bar.style.width = percent + "%";
+    text.textContent = percent + "% completado";
 
-    // Actualizar Ingeniería
-    const engBar = container.querySelector("#eng-bar");
-    const engText = container.querySelector("#eng-text");
-    engBar.style.width = engPercent + "%";
-    engText.textContent = engPercent + "% completado";
-    engBar.classList.remove("low", "medium", "high");
-    if (engPercent <= 30) {
-        engBar.classList.add("low");
-    } else if (engPercent <= 70) {
-        engBar.classList.add("medium");
+    bar.classList.remove("low", "medium", "high");
+    if (percent <= 30) {
+        bar.classList.add("low");
+    } else if (percent <= 70) {
+        bar.classList.add("medium");
     } else {
-        engBar.classList.add("high");
+        bar.classList.add("high");
     }
 }
