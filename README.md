@@ -58,3 +58,12 @@ validateCurriculum(materias);
 
 Esto devuelve un arreglo de mensajes; si está vacío, todo está correcto.
 
+### Recargar cambios de `materias.json`
+
+La aplicación cachea el estado en `localStorage`, por lo que después de modificar el archivo no verás los cambios hasta que el plan guardado y la lista de materias coincidan. Si quieres forzar la actualización:
+
+- borra la clave `mallaPlan` en `localStorage` (abre DevTools → Application)
+
+La app ahora combina el archivo `materias.json` con cualquier plan existente; los nombres actualizados se aplican automáticamente y se conservan los estados "aprobada" cuando los IDs coinciden. Borrar el storage sólo es necesario en casos excepcionales.
+
+

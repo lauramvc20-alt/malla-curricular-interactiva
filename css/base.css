@@ -1,21 +1,33 @@
-/* estilos globales */
+/* estilos globales - estética minimalista suave */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap");
+
 :root {
-    --primary-color: #0055a5;
-    --secondary-color: #f5f5f5;
-    --font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    --primary-color: #4a90e2;          /* azul suave */
+    --secondary-color: #fafafa;        /* fondo casi blanco */
+    --text-color: #333444;            /* gris oscura para texto */
+    --accent-color: #50e3c2;          /* verde agua para mat. aprobadas */
+    --font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    --card-bg: #ffffff;
+    --card-shadow: 0 1px 4px rgba(0,0,0,0.08);
 }
 
 body {
     font-family: var(--font-family);
     background-color: var(--secondary-color);
-    color: #333;
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
     color: var(--primary-color);
+    font-weight: 600;
+    margin-top: 1.5rem;
 }
 
 a {
     color: var(--primary-color);
     text-decoration: none;
 }
+

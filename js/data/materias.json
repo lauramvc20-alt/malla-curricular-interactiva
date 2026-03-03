@@ -1,173 +1,335 @@
 [
   {
     "id": 1,
-    "nombre": "Programación I",
+    "nombre": "Fundamentos de Matemáticas",
     "periodo": 1,
-    "area": "tecnologia",
     "nivel": "BASICO",
     "estado": "PENDIENTE",
+    "créditos": 3,
     "prerrequisitos": []
   },
   {
     "id": 2,
-    "nombre": "Matemáticas Básicas",
+    "nombre": "Módulo Introductorio",
     "periodo": 1,
-    "area": "tecnologia",
     "nivel": "BASICO",
-    "estado": "APROBADA",
+    "estado": "PENDIENTE",
+    "créditos": 3,
     "prerrequisitos": []
   },
   {
     "id": 3,
-    "nombre": "Introducción a la Ingeniería",
+    "nombre": "Inglés Básico",
     "periodo": 1,
-    "area": "ingenieria",
     "nivel": "BASICO",
     "estado": "PENDIENTE",
+    "créditos": 3,
     "prerrequisitos": []
   },
   {
     "id": 4,
-    "nombre": "Cálculo I",
-    "periodo": 2,
-    "area": "tecnologia",
+    "nombre": "Infraestructura Computacional",
+    "periodo": 1,
     "nivel": "BASICO",
     "estado": "PENDIENTE",
-    "prerrequisitos": [2]
+    "créditos": 3,
+    "prerrequisitos": []
   },
   {
     "id": 5,
-    "nombre": "Electrónica Básica",
-    "periodo": 2,
-    "area": "ingenieria",
+    "nombre": "Lógica de Programación",
+    "periodo": 1,
     "nivel": "BASICO",
     "estado": "PENDIENTE",
+    "créditos": 3,
     "prerrequisitos": []
   },
   {
     "id": 6,
-    "nombre": "Programación II",
-    "periodo": 3,
-    "area": "tecnologia",
-    "nivel": "INTERMEDIO",
+    "nombre": "Inglés Intermedio",
+    "periodo": 2,
+    "nivel": "BASICO",
     "estado": "PENDIENTE",
-    "prerrequisitos": [1]
+    "créditos": 3,
+    "prerrequisitos": []
   },
   {
     "id": 7,
-    "nombre": "Cálculo II",
-    "periodo": 3,
-    "area": "ingenieria",
-    "nivel": "INTERMEDIO",
+    "nombre": "Álgebra Lineal",
+    "periodo": 2,
+    "nivel": "BASICO",
     "estado": "PENDIENTE",
-    "prerrequisitos": [4]
+    "créditos": 3,
+    "prerrequisitos": []
   },
   {
     "id": 8,
-    "nombre": "Estructuras de Datos",
-    "periodo": 4,
-    "area": "tecnologia",
-    "nivel": "INTERMEDIO",
+    "nombre": "Configuración de Sistemas Operativos",
+    "periodo": 2,
+    "nivel": "BASICO",
     "estado": "PENDIENTE",
-    "prerrequisitos": [6]
+    "créditos": 3,
+    "prerrequisitos": []
   },
   {
     "id": 9,
-    "nombre": "Circuitos Eléctricos",
-    "periodo": 4,
-    "area": "ingenieria",
-    "nivel": "INTERMEDIO",
+    "nombre": "Programación Estructurada",
+    "periodo": 2,
+    "nivel": "BASICO",
     "estado": "PENDIENTE",
-    "prerrequisitos": [5]
+    "créditos": 3,
+    "prerrequisitos": []
   },
   {
     "id": 10,
-    "nombre": "Bases de Datos",
-    "periodo": 5,
-    "area": "tecnologia",
-    "nivel": "INTERMEDIO",
+    "nombre": "Introducción al Modelado",
+    "periodo": 2,
+    "nivel": "BASICO",
     "estado": "PENDIENTE",
-    "prerrequisitos": [6]
+    "créditos": 3,
+    "prerrequisitos": []
   },
   {
     "id": 11,
-    "nombre": "Mecánica I",
-    "periodo": 5,
-    "area": "ingenieria",
+    "nombre": "Cálculo Diferencial",
+    "periodo": 3,
     "nivel": "INTERMEDIO",
     "estado": "PENDIENTE",
+    "créditos": 3,
     "prerrequisitos": []
   },
   {
     "id": 12,
-    "nombre": "Ingeniería de Software",
-    "periodo": 6,
-    "area": "tecnologia",
-    "nivel": "AVANZADO",
+    "nombre": "Seguridad en aplicaciones",
+    "periodo": 3,
+    "nivel": "INTERMEDIO",
     "estado": "PENDIENTE",
-    "prerrequisitos": [8, 10]
+    "créditos": 3,
+    "prerrequisitos": []
   },
   {
     "id": 13,
-    "nombre": "Termodinámica",
-    "periodo": 6,
-    "area": "ingenieria",
-    "nivel": "AVANZADO",
+    "nombre": "Bases de Datos",
+    "periodo": 3,
+    "nivel": "INTERMEDIO",
     "estado": "PENDIENTE",
-    "prerrequisitos": [9, 11]
+    "créditos": 3,
+    "prerrequisitos": []
   },
   {
     "id": 14,
-    "nombre": "Redes de Computadoras",
-    "periodo": 7,
-    "area": "tecnologia",
-    "nivel": "AVANZADO",
+    "nombre": "Estructura de Datos",
+    "periodo": 3,
+    "nivel": "INTERMEDIO",
     "estado": "PENDIENTE",
-    "prerrequisitos": [10]
+    "créditos": 3,
+    "prerrequisitos": []
   },
   {
     "id": 15,
-    "nombre": "Mecatrónica",
-    "periodo": 7,
-    "area": "ingenieria",
-    "nivel": "AVANZADO",
+    "nombre": "Pruebas de Software",
+    "periodo": 3,
+    "nivel": "INTERMEDIO",
     "estado": "PENDIENTE",
-    "prerrequisitos": [11]
+    "créditos": 3,
+    "prerrequisitos": []
   },
   {
     "id": 16,
-    "nombre": "Seguridad Informática",
-    "periodo": 8,
-    "area": "tecnologia",
-    "nivel": "AVANZADO",
+    "nombre": "Inglés técnico",
+    "periodo": 4,
+    "nivel": "INTERMEDIO",
     "estado": "PENDIENTE",
-    "prerrequisitos": [12, 14]
+    "créditos": 3,
+    "prerrequisitos": []
   },
   {
     "id": 17,
-    "nombre": "Diseño de Máquinas",
-    "periodo": 8,
-    "area": "ingenieria",
-    "nivel": "AVANZADO",
+    "nombre": "Cálculo Integral",
+    "periodo": 4,
+    "nivel": "INTERMEDIO",
     "estado": "PENDIENTE",
-    "prerrequisitos": [13, 15]
+    "créditos": 3,
+    "prerrequisitos": []
   },
   {
     "id": 18,
-    "nombre": "Proyecto Integrador I",
-    "periodo": 9,
-    "area": "tecnologia",
-    "nivel": "AVANZADO",
+    "nombre": "Fundamentos de Investigación y Emprendimiento",
+    "periodo": 4,
+    "nivel": "INTERMEDIO",
     "estado": "PENDIENTE",
-    "prerrequisitos": [12, 14]
+    "créditos": 3,
+    "prerrequisitos": []
   },
   {
     "id": 19,
-    "nombre": "Proyecto Integrador II",
-    "periodo": 10,
-    "area": "tecnologia",
+    "nombre": "Gestión de Bases de Datos",
+    "periodo": 4,
+    "nivel": "INTERMEDIO",
+    "estado": "PENDIENTE",
+    "créditos": 3,
+    "prerrequisitos": []
+  },
+  {
+    "id": 20,
+    "nombre": "Programación orientada a objetos",
+    "periodo": 4,
+    "nivel": "INTERMEDIO",
+    "estado": "PENDIENTE",
+    "créditos": 3,
+    "prerrequisitos": []
+  },
+  {
+    "id": 21,
+    "nombre": "Costos y Presupuestos",
+    "periodo": 5,
+    "nivel": "INTERMEDIO",
+    "estado": "PENDIENTE",
+    "créditos": 4,
+    "prerrequisitos": []
+  },
+  {
+    "id": 22,
+    "nombre": "Constitución Política y Formación Cívica",
+    "periodo": 5,
+    "nivel": "INTERMEDIO",
+    "estado": "PENDIENTE",
+    "créditos": 4,
+    "prerrequisitos": []
+  },
+  {
+    "id": 23,
+    "nombre": "Estadística y probabilidades",
+    "periodo": 5,
+    "nivel": "INTERMEDIO",
+    "estado": "PENDIENTE",
+    "créditos": 3,
+    "prerrequisitos": []
+  },
+  {
+    "id": 24,
+    "nombre": "Programación en entornos web",
+    "periodo": 5,
+    "nivel": "INTERMEDIO",
+    "estado": "PENDIENTE",
+    "créditos": 3,
+    "prerrequisitos": []
+  },
+  {
+    "id": 25,
+    "nombre": "Electiva I",
+    "periodo": 5,
+    "nivel": "INTERMEDIO",
+    "estado": "PENDIENTE",
+    "créditos": 3,
+    "prerrequisitos": []
+  },
+  {
+    "id": 26,
+    "nombre": "Matemáticas Discretas",
+    "periodo": 5,
+    "nivel": "INTERMEDIO",
+    "estado": "PENDIENTE",
+    "créditos": 3,
+    "prerrequisitos": []
+  },
+  {
+    "id": 27,
+    "nombre": "Métodos para análisis de datos",
+    "periodo": 6,
     "nivel": "AVANZADO",
     "estado": "PENDIENTE",
-    "prerrequisitos": [18]
+    "créditos": 4,
+    "prerrequisitos": []
+  },
+  {
+    "id": 28,
+    "nombre": "Práctica Empresarial tecnológico",
+    "periodo": 6,
+    "nivel": "AVANZADO",
+    "estado": "PENDIENTE",
+    "créditos": 4,
+    "prerrequisitos": []
+  },
+  {
+    "id": 29,
+    "nombre": "Opción de grado nivel tecnológico",
+    "periodo": 6,
+    "nivel": "AVANZADO",
+    "estado": "PENDIENTE",
+    "créditos": 4,
+    "prerrequisitos": []
+  },
+  {
+    "id": 30,
+    "nombre": "Programación para dispositivos móviles",
+    "periodo": 6,
+    "nivel": "AVANZADO",
+    "estado": "PENDIENTE",
+    "créditos": 3,
+    "prerrequisitos": []
+  },
+  {
+    "id": 31,
+    "nombre": "Electiva II",
+    "periodo": 6,
+    "nivel": "AVANZADO",
+    "estado": "PENDIENTE",
+    "créditos": 3,
+    "prerrequisitos": []
+  },
+  {
+    "id": 32,
+    "nombre": "Redes de Computadoras",
+    "periodo": 7,
+    "nivel": "AVANZADO",
+    "estado": "PENDIENTE",
+    "créditos": 20,
+    "prerrequisitos": []
+  },
+  {
+    "id": 33,
+    "nombre": "Mecatrónica",
+    "periodo": 7,
+    "nivel": "AVANZADO",
+    "estado": "PENDIENTE",
+    "créditos": 20,
+    "prerrequisitos": []
+  },
+  {
+    "id": 34,
+    "nombre": "Seguridad Informática",
+    "periodo": 8,
+    "nivel": "AVANZADO",
+    "estado": "PENDIENTE",
+    "créditos": 20,
+    "prerrequisitos": []
+  },
+  {
+    "id": 35,
+    "nombre": "Diseño de Máquinas",
+    "periodo": 8,
+    "nivel": "AVANZADO",
+    "estado": "PENDIENTE",
+    "créditos": 20,
+    "prerrequisitos": []
+  },
+  {
+    "id": 36,
+    "nombre": "Proyecto Integrador I",
+    "periodo": 9,
+    "nivel": "AVANZADO",
+    "estado": "PENDIENTE",
+    "créditos": 41,
+    "prerrequisitos": []
+  },
+  {
+    "id": 37,
+    "nombre": "Proyecto Integrador II",
+    "periodo": 10,
+    "nivel": "AVANZADO",
+    "estado": "PENDIENTE",
+    "créditos": 41,
+    "prerrequisitos": []
   }
 ]
