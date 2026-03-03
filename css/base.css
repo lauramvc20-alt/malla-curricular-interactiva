@@ -1,15 +1,55 @@
 /* estilos globales - estética minimalista suave */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap");
 
+/* fuente local personalizada */
+@font-face {
+    font-family: 'Bitroad';
+    src: url('../assets/fonts/Bitroad-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* segunda fuente para totales */
+@font-face {
+    font-family: 'NunitoItalicVar';
+    src: url('../assets/fonts/Nunito-Italic-VariableFont_wght.woff2') format('woff2');
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* fuente regular para títulos de período */
+@font-face {
+    font-family: 'NunitoRegular';
+    /* primero buscar versión instalada en el sistema */
+    src: local('Nunito Regular'),
+         local('Nunito-Regular'),
+         url('../assets/Nunito-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* fuente para nombres de materia */
+@font-face {
+    font-family: 'NunitoItalicSimple';
+    src: url('../assets/fonts/Nunito-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
 :root {
-    --primary-color: #4a90e2;          /* azul suave */
-    --secondary-color: #fafafa;        /* fondo casi blanco */
-    --text-color: #333444;            /* gris oscura para texto */
-    --accent-color: #50e3c2;          /* verde agua para mat. aprobadas */
+    --primary-color: #c084fc;          /* morado pastel medio */
+    --secondary-color: #fdf4ff;        /* fondo rosa muy claro */
+    --text-color: #4b3b5a;             /* morado gris oscuro para contraste */
+    --accent-color: #f9a8d4;           /* rosa pastel para materias aprobadas */
     --font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     --card-bg: #ffffff;
-    --card-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    --card-shadow: 0 4px 12px rgba(192,132,252,0.15);
 }
+
 
 body {
     font-family: var(--font-family);

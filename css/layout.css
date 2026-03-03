@@ -17,17 +17,41 @@
     border: 1px solid #ddd;
     border-radius: 12px;
     overflow: hidden;
-    background: white;
+    /* fondo degradado rosado -> morado suave */
+    background: linear-gradient(135deg, #ffd6ff 0%, #cdb4db 100%);
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+/* color diferenciado para el fondo del bloque de ingeniería, tonos rosado pastel claro */
+.program-block.eng {
+    background: linear-gradient(135deg, #e9cde9 0%, #ffd6ff 100%);
+}
+.program-block.eng .program-header {
+    background: #ffdfef; /* header rosado muy claro */
+}
+
+/* ajustar tarjetas ingeniería para rosa suave y hover más claro */
+.program-block.eng .materia {
+    background: #ffdfef; /* rosa pastel */
+}
+.program-block.eng .materia:hover {
+    background: #ffecf5; /* rosa aún más claro */
+}
+.program-block.eng .materia.aprobada {
+    background: #ffecf5; /* igual al hover */
 }
 
 .program-header {
-    background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
     color: white;
     padding: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.program-block.tech .program-header {
+    background: #ffd6ff; /* light pastel pink */
+}
+.program-block.eng .program-header {
+    background: #e0c3fc; /* pastel lilac */
 }
 
 .program-header h2 {
@@ -36,6 +60,7 @@
     font-weight: 700;
     color: white;
     text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    font-family: 'Bitroad', var(--font-family);
 }
 
 .program-info {
@@ -49,6 +74,8 @@
 .credit-total {
     font-weight: 500;
     color: white;
+    font-family: 'NunitoItalicVar', var(--font-family);
+    font-style: italic;
 }
 
 .periodos-container {
@@ -71,12 +98,29 @@
     margin-bottom: 1rem;
     color: #333;
     font-size: 1.1rem;
+    font-family: 'NunitoRegular', var(--font-family) !important;
+    text-align: center;
+}
+
+/* background behind period headings */
+.periodo-1 h3, .periodo-2 h3, .periodo-3 h3,
+.periodo-4 h3, .periodo-5 h3, .periodo-6 h3 {
+    background: #ffc6ff;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    color: white !important;
+}
+
+.periodo-7 h3, .periodo-8 h3, .periodo-9 h3, .periodo-10 h3 {
+    background: #ffd6ff;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    color: white !important;
 }
 
 .materia {
     margin: 0.5rem 0;
     padding: 0.75rem 1rem;
-    background: var(--primary-color);
     color: white;
     border-radius: 6px;
     cursor: pointer;
@@ -86,22 +130,52 @@
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
+    border: 2px dashed rgba(255,255,255,0.6);
+}
+
+/* colores específicos por programa */
+.program-block.tech .materia {
+    background: #cdb4db; /* morado suave */
+}
+.program-block.tech .materia:hover {
+    background: #ffafcc; /* rosado opaco */
+}
+.program-block.tech .materia.aprobada {
+    background: #ffafcc; /* color contrario al toggle */
+}
+
+.program-block.eng .materia {
+    background: #ffafcc; /* rosado */
+}
+.program-block.eng .materia:hover {
+    background: #cdb4db; /* morado pastel claro */
+}
+.program-block.eng .materia.aprobada {
+    background: #cdb4db; /* same as hover, pastel morado */
 }
 
 .materia-nombre {
     font-weight: 500;
+    font-family: 'NunitoItalicSimple', var(--font-family);
+    font-style: italic;
+    text-align: center;
 }
 
 .materia-creditos {
     display: none;
 }
 
+/* global approved fallback removed; overridden per-program above */
 .materia.aprobada {
-    background: var(--accent-color);
     color: #ffffff;
 }
 
 /* animación de pulsado para la materia clicada */
+
+/* asegurar texto contraste */
+.materia, .program-header h2, .credit-total, .periodo h3 {
+    color: #ffffff;
+}
 @keyframes pop {
     0% { transform: scale(0.95); }
     50% { transform: scale(1.05); }
@@ -150,9 +224,17 @@
 .progress-container.tech-progress .progress-bar.medium { background: #ffb81c; }
 .progress-container.tech-progress .progress-bar.high { background: #4caf50; }
 
-.progress-container.eng-progress .progress-bar.low { background: #ff6b6b; }
-.progress-container.eng-progress .progress-bar.medium { background: #ffa500; }
-.progress-container.eng-progress .progress-bar.high { background: #45b649; }
+.progress-container.eng-progress .progress-bar.low { 
+    background: #f9a8d4;
+}
+
+.progress-container.eng-progress .progress-bar.medium { 
+    background: #c084fc;   
+}
+
+.progress-container.eng-progress .progress-bar.high { 
+    background: #9333ea;   
+}
 
 /* Responsive */
 @media (max-width: 768px) {

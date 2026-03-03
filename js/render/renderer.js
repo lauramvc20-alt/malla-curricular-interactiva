@@ -20,22 +20,24 @@ export function renderCurriculum(root) {
     container.appendChild(createProgramBlock(
         "Tecnología en Desarrollo de Software",
         techCredits,
-        tech
+        tech,
+        'tech'
     ));
 
     // Crear bloque Ingeniería de Sistemas
     container.appendChild(createProgramBlock(
         "Ingeniería de Sistemas",
         engCredits,
-        eng
+        eng,
+        'eng'
     ));
 
     root.appendChild(container);
 }
 
-function createProgramBlock(title, totalCredits, materias) {
+function createProgramBlock(title, totalCredits, materias, type) {
     const block = document.createElement("div");
-    block.className = "program-block";
+    block.className = "program-block" + (type ? ` ${type}` : "");
 
     // Encabezado del programa
     const headerDiv = document.createElement("div");
@@ -63,7 +65,7 @@ function createProgramBlock(title, totalCredits, materias) {
         .sort((a, b) => a - b)
         .forEach(p => {
             const divP = document.createElement("div");
-            divP.className = "periodo";
+            divP.className = "periodo periodo-" + p;
             divP.innerHTML = `<h3>Período ${p}</h3>`;
 
             periodos[p].forEach(m => {
