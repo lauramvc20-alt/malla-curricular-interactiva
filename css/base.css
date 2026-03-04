@@ -13,7 +13,7 @@
 /* segunda fuente para totales */
 @font-face {
     font-family: 'NunitoItalicVar';
-    src: url('../assets/fonts/Nunito-Italic-VariableFont_wght.woff2') format('woff2');
+    src: url('../assets/Nunito-Italic-VariableFont_wght.woff2') format('woff2');
     font-weight: 100 900;
     font-style: italic;
     font-display: swap;
@@ -34,7 +34,7 @@
 /* fuente para nombres de materia */
 @font-face {
     font-family: 'NunitoItalicSimple';
-    src: url('../assets/fonts/Nunito-Italic.woff2') format('woff2');
+    src: url('../assets/Nunito-Italic.woff2') format('woff2');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
